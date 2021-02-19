@@ -29,7 +29,7 @@
       <img src="/images/menstriecastle.jpg" alt="Menstrie Castle" />
     </div>
 
-    <div class="top-heading">
+    <div class="top-heading scroll1">
       <h5>Welcome To Menstrie</h5>
     </div>
 
@@ -62,5 +62,14 @@
         <span> <a href="#"> here </a></span>to find out more.
       </p>
     </div>
+    <script>
+      // Add event listner
+      window.addEventListener("scroll", function (e) {
+        const target = document.querySelector(".scroll1");
+        var scrolled = window.pageYOffset;
+        var rate = scrolled * 0.5;
+        target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
+      });
+    </script>
   </body>
 </html>

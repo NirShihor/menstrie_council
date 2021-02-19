@@ -115,12 +115,14 @@ p {
 
   .top-heading {
     font-size: 2rem !important;
+    z-index: -1;
   }
 
   .text {
     text-align: center;
     max-width: 60%;
     margin: auto;
+    background-color: #fff;
   }
 
   .text p {

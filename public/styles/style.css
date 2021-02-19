@@ -6,7 +6,7 @@ html {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   line-height: 1.4;
-  --nav-load-time: 300ms;
+  --nav-load-time: 301ms;
   --nav-link-load-time: 500ms;
   --image-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time));
 }

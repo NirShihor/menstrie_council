@@ -9,11 +9,21 @@ html {
 }
 
 .nav-one {
+  background-color: rgb(0, 61, 92);
   text-align: center;
   margin: auto;
   padding-top: 1rem;
+  animation: nav-load 300ms ease-in;
 }
 
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 /* To ensure navbar is in center */
 ul {
   text-align: center;
@@ -24,11 +34,17 @@ ul {
 
 li {
   display: inline;
-  padding: 0.2rem;
+  padding: 0.3rem;
+}
+
+li:hover {
+  background-color: #ffffff44;
 }
 
 a {
   text-decoration: none;
+  font-weight: 600;
+  color: #fff;
 }
 
 .text {
@@ -83,7 +99,7 @@ p {
   }
 
   .text {
-    max-width: 50%;
+    max-width: 60%;
     margin: auto;
   }
 

@@ -28,6 +28,7 @@ ul {
 
 nav li {
   display: inline-block;
+  font-size: 1.4rem;
   padding: 0.2rem 0.3rem 0.1rem 0.3rem;
   animation-name: nav-link-load;
   animation-duration: var(--nav-link-load-time);

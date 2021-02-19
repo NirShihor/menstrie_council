@@ -49,7 +49,7 @@ a {
   padding-top: 0.5rem;
   padding-left: 0.3rem;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-block-start: 0em;
   margin-block-end: 0em;
   font-weight: bold;
@@ -59,6 +59,7 @@ p {
   text-align: left;
   padding: 0rem 0.3rem 0.3rem 0.3rem;
   margin-top: 0.1rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -124,5 +125,5 @@ p {
 
 .top-heading {
   line-height: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }

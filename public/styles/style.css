@@ -1,0 +1,128 @@
+body,
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+.nav-one {
+  text-align: center;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+/* To ensure navbar is in center */
+ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  min-height: 3.5rem;
+}
+
+li {
+  display: inline;
+  padding: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text {
+  position: relative;
+  text-align: center;
+  margin: 0rem 1rem 0rem 1rem;
+  font-size: 0.9rem;
+  box-shadow: 50px 0px 40px rgba(0, 0, 0, 0.3),
+    -10px 20px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2rem;
+}
+
+.text h5 {
+  text-align: left;
+}
+
+.sub-heading h5 {
+  padding-top: 0.5rem;
+  padding-left: 0.3rem;
+  text-align: left;
+  font-size: 0.9rem;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-weight: bold;
+}
+
+p {
+  text-align: left;
+  padding: 0rem 0.3rem 0.3rem 0.3rem;
+  margin-top: 0.1rem;
+}
+
+@media screen and (min-width: 700px) {
+  .nav-one {
+    padding-top: 1.5rem;
+  }
+  li {
+    font-size: 1.2rem;
+    padding: 2rem;
+  }
+
+  .top-img {
+    max-width: 60% !important;
+  }
+  /* .top-img img {
+    max-width: 60%;
+  } */
+
+  .top-heading {
+    font-size: 2rem !important;
+  }
+
+  .text {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .text p {
+    padding: 1rem;
+    margin-top: -0.3rem !important;
+  }
+
+  .text h5 {
+    padding: 1rem 1rem 0rem 1rem;
+  }
+}
+
+/* To prevent nav links from splitting on screen resize */
+.hide {
+  color: transparent;
+  font-size: 0.7rem;
+}
+
+.top-img {
+  max-width: 90%;
+  text-align: center;
+  margin: auto;
+  box-shadow: 50px 10px 40px rgba(0, 0, 0, 0.3),
+    -10px 30px 20px rgba(0, 0, 0, 0.3);
+}
+
+.top-img img {
+  display: block;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  border-radius: 0.2rem;
+}
+
+.top-heading {
+  text-align: center;
+}
+
+.top-heading {
+  line-height: 0.5rem;
+  font-size: 1.3rem;
+}

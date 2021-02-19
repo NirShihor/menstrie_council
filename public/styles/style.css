@@ -66,6 +66,13 @@ li:hover {
   box-shadow: 50px 0px 40px rgba(0, 0, 0, 0.3),
     -10px 20px 20px rgba(0, 0, 0, 0.3);
   border-radius: 0.2rem;
+  padding: 1rem;
+}
+
+.int-logo {
+  float: left;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .text h5 {
@@ -179,6 +186,10 @@ p {
   animation-delay: 2000ms;
   animation-fill-mode: forwards;
   transform: scale(0);
+}
+
+.text2 {
+  margin-top: 2rem;
 }
 
 .top-img img {

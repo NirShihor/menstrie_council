@@ -59,6 +59,7 @@ li:hover {
 }
 
 .text {
+  display: inline-block;
   position: relative;
   text-align: center;
   margin: 0rem 1rem 0rem 1rem;
@@ -102,7 +103,7 @@ p {
   }
   li {
     font-size: 1rem;
-    padding: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 
   .top-img {
@@ -131,7 +132,13 @@ p {
   }
 
   ul {
-    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  ul {
+    max-width: 60%;
   }
 }
 
@@ -156,7 +163,7 @@ p {
 
 @media screen and (min-width: 531px) and (max-width: 730px) {
   ul {
-    padding-top: 2rem !important;
+    max-width: 70%;
   }
 }
 

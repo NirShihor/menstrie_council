@@ -6,24 +6,17 @@ html {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   line-height: 1.4;
+  --nav-load-time: 300ms;
+  --nav-link-load-time: 500ms;
 }
 
-.nav-one {
+.nav {
   background-color: rgb(0, 61, 92);
   text-align: center;
   margin: auto;
-  padding-top: 1rem;
-  animation: nav-load 300ms ease-in;
+  animation: nav-load var(--nav-load-time) ease-in;
 }
 
-@keyframes nav-load {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 /* To ensure navbar is in center */
 ul {
   text-align: center;
@@ -32,16 +25,22 @@ ul {
   min-height: 3.5rem;
 }
 
-li {
-  display: inline;
-  padding: 0.3rem;
+nav li {
+  display: inline-block;
+  padding: 0.2rem 0.3rem 0.1rem 0.3rem;
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-load-time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 
 li:hover {
   background-color: #ffffff44;
 }
 
-a {
+.nav a {
   text-decoration: none;
   font-weight: 600;
   color: #fff;
@@ -83,8 +82,8 @@ p {
     padding-top: 1.5rem;
   }
   li {
-    font-size: 1.2rem;
-    padding: 2rem;
+    font-size: 1rem;
+    padding: 2.2rem !important;
   }
 
   .top-img {
@@ -142,4 +141,27 @@ p {
 .top-heading {
   line-height: 0.5rem;
   font-size: 1.6rem;
+}
+
+@keyframes nav-load {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes nav-link-load {
+  0% {
+    transform: scale(0);
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

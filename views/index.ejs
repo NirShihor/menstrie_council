@@ -29,11 +29,11 @@
       <img src="/images/menstriecastle.jpg" alt="Menstrie Castle" />
     </div>
 
-    <div class="top-heading scroll1">
+    <div class="top-heading scroll" data-rate="0.5">
       <h5>Welcome To Menstrie</h5>
     </div>
 
-    <div class="text text1">
+    <div class="text scroll" data-rate="-1.2">
       <div class="sub-heading">
         <h5>Menstrie Community Resilience Group</h5>
       </div>
@@ -45,7 +45,7 @@
       </p>
     </div>
 
-    <div class="text text2">
+    <div class="text text2 scroll" data-rate="-1.2">
       <div class="sub-heading">
         <h5>Menstrie Community Action Group</h5>
       </div>
@@ -63,12 +63,17 @@
       </p>
     </div>
     <script>
-      // Add event listner
+      //   Add event listner
       window.addEventListener("scroll", function (e) {
-        const target = document.querySelector(".scroll1");
-        var scrolled = window.pageYOffset;
-        var rate = scrolled * 0.5;
-        target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
+        const target = document.querySelectorAll(".scroll");
+        var index = 0,
+          length = target.length;
+        for (index; index < length; index++) {
+          var pos = window.pageYOffset * target[index].dataset.rate;
+
+          target[index].style.transform =
+            "translate3d(0px, " + pos + "px, 0px)";
+        }
       });
     </script>
   </body>

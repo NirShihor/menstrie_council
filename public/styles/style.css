@@ -159,6 +159,7 @@ p {
 }
 
 .top-img {
+  margin-top: 2rem !important;
   max-width: 90%;
   text-align: center;
   margin: auto;

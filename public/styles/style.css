@@ -176,7 +176,7 @@ p {
   animation: nav-link-load 300ms ease-in;
   animation-duration: var(--nav-link-load-time);
   animation-timing-function: ease-in;
-  animation-delay: 1200ms;
+  animation-delay: 2000ms;
   animation-fill-mode: forwards;
   transform: scale(0);
 }
@@ -199,7 +199,7 @@ p {
 
 .top-heading h5 {
   display: block;
-  animation: image-load 300ms ease-in var(--image-load-delay);
+  animation: image-load 300ms ease-in 1500ms;
   animation-fill-mode: forwards;
   transform: translateY(-20);
   opacity: 0;

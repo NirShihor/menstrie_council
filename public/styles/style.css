@@ -58,6 +58,10 @@ li:hover {
   color: #fff;
 }
 
+.top-heading {
+  margin-top: 1rem;
+}
+
 .text {
   position: relative;
   background-color: #fff;
@@ -117,6 +121,7 @@ p {
   .top-heading {
     font-size: 2rem !important;
     z-index: -1;
+    margin-top: 0rem;
   }
 
   .text {
@@ -191,6 +196,7 @@ p {
 }
 
 .text1 {
+  margin-top: 6rem;
   /* animation: nav-link-load 300ms ease-in;
   animation-duration: var(--nav-link-load-time);
   animation-timing-function: ease-in;

@@ -166,6 +166,12 @@ p {
   }
 }
 
+@media screen and (min-width: 900px) {
+  li {
+    margin-top: 0.5rem;
+  }
+}
+
 @media screen and (min-width: 400px) and (max-width: 500px) {
   ul {
     max-width: 80%;

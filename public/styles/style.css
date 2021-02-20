@@ -18,6 +18,13 @@ html {
   animation: nav-load var(--nav-load-time) ease-in;
 }
 
+/* nav-inactive is the navbar on the header partial distributed to all pages other than home page, which has the nav that is animated */
+.nav-inactive {
+  background-color: rgb(0, 61, 92);
+  text-align: center;
+  margin: auto;
+}
+
 /* To ensure navbar is in center */
 ul {
   text-align: center;
@@ -26,7 +33,7 @@ ul {
   min-height: 3.5rem;
 }
 
-nav li {
+.nav li {
   display: inline-block;
   font-size: 1.4rem;
   padding: 0.2rem 0.3rem 0.1rem 0.3rem;
@@ -38,12 +45,18 @@ nav li {
   transform: scale(0);
 }
 
-nav li:first-child {
+.nav-inactive li {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 0.2rem 0.3rem 0.1rem 0.3rem;
+}
+
+.nav li:first-child {
   animation-name: nav-first-link-load;
   transform: translateX(-1000%);
 }
 
-nav li:last-child {
+.nav li:last-child {
   animation-name: nav-last-link-load;
   transform: translateX(1000%);
 }
@@ -53,6 +66,12 @@ li:hover {
 }
 
 .nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+.nav-inactive a {
   text-decoration: none;
   font-weight: 600;
   color: #fff;
@@ -180,7 +199,7 @@ p {
 
 .top-img {
   margin-top: 2rem !important;
-  max-width: 90%;
+  max-width: 94.5%;
   text-align: center;
   margin: auto;
   box-shadow: 50px 10px 40px rgba(0, 0, 0, 0.3),
@@ -189,15 +208,6 @@ p {
   animation-fill-mode: forwards;
   transform: translateY(-20);
   opacity: 0;
-}
-
-.text1 {
-  /* animation: nav-link-load 300ms ease-in;
-  animation-duration: var(--nav-link-load-time);
-  animation-timing-function: ease-in;
-  animation-delay: 2000ms;
-  animation-fill-mode: forwards;
-  transform: scale(0); */
 }
 
 /* As animation above for text1 clashes with parallax - fade in effedt instead */
@@ -353,4 +363,24 @@ h5 {
     transform: translateY(0px);
     opacity: 1;
   }
+}
+
+.ind-sub-heading {
+  text-align: center !important;
+}
+
+.list {
+  text-align: left;
+  max-width: 90% !important;
+}
+
+.list li {
+  margin-top: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.other-text {
+  font-size: 1.2rem;
+  text-align: left;
+  padding: 1rem;
 }

@@ -1,0 +1,66 @@
+  <body>
+    <%- include ("../partials/header.ejs") %>
+    <div class="top-img">
+      <img src="/images/ochil_hills.png" alt="Menstrie Castle" />
+    </div>
+
+    <div class="top-heading scroll">
+        <h5>Menstrie's Heritage</h5>
+      </div>
+
+<div class="text scroll" data-rate="-1.2">
+      <div class="sub-heading">
+        <h5 class="ind-sub-heading">General</h5>
+      </div>
+      <div class="other-text scroll">
+          Use these links for more about our history, our environment and our scenery.
+      </div>
+<ul class="list">
+  <li><span> <a href="#">Menstrie Castle and its history></a></li>
+  <li><span> <a href="#">Sir William Alexander:</a>our connection with Nova Scotia</li>
+  <li><span> <a href="#">The Holburne Family:</a>owned Menstrie Castle after the Alexanders</li>
+      <li><span> <a href="#">Menstrie and surroundings in 1895:</a>1 inch to the mile</li>
+  <li><span> <a href="#">Menstrie in 1899:</a>1 to 2,500</li>
+  <li><span> <a href="#">Menstrie Glen and Burn:</a>we have plans for them</li>
+      <li><span> <a href="#">Menstrie Wood:</a>1 to 2,500</li>
+  <li><span> <a href="#">'The Ochil Hills - A Special Place':</a>aspects of their geology, geography, biodiveristy, history and agriculture</li>
+</ul>
+<br>
+
+      <div class="sub-heading">
+        <h5 >Geology</h5>
+      </div>
+
+      <p>
+        Today's Ochil Hills are composed of rock which was molten over 300 Million years ago.
+
+In Carboniferous times, about 350 - 300 Million years ago, Scotland lay on the Equator. The Midland Valley was alternately under shallow sea and muddy swamps. Tropical forests grew, fell and decayed forming coal measures interleaved with marine deposits. Movements deep under the Earth forced molten rock between sedimentary layers and, as it cooled, this magma hardened to form the Midland Valley Sill. Also about then, the ground to the North of the Ochil Fault rose as the Midland valley dropped.
+<br><br>
+By 35 Million years ago, the part of the Earth's crust carrying Britain was moving towards its present northerly latitude.
+<br><br>
+In the past 2.5 Million years, a series of glaciations exposed and eroded the hard Midland Valley Sill, leaving free-standing crags with tails as at Stirling and Abbey Craig.
+<br><br>
+About 13,000 years ago, the sea was about 45 metres above the present level, leaving mud and sand at the foot of the Ochils. The sea was at its present level about 10,000 years ago when Scotland's glaciers finally melted. Since then it has risen and fallen again by about ten metres.
+<br><br>
+The removal of the heavy mass of glacier ice has allowed Scotland to rise slowly, relative to the British Isles as a whole. The ground is still rising, most rapidly over an area centred between Glasgow and Inverness. Clackmannanshire (accompanied by Glasgow and Fort William !) is rising at about 3 millimetres a year. However, this uplift may be overtaken if global warming causes a more rapid rise of worldwide sea level. Recently (1993-2003), sea level has been rising at a rate of about 3 millimeters a year.
+<br><br>
+At present, Midtown in Menstrie stands about 20 metres above sea level.
+      </p>
+    </div>
+
+
+    <script>
+      //   Add event listner
+      window.addEventListener("scroll", function (e) {
+        const target = document.querySelectorAll(".scroll");
+        var index = 0,
+          length = target.length;
+        for (index; index < length; index++) {
+          var pos = window.pageYOffset * target[index].dataset.rate;
+
+          target[index].style.transform =
+            "translate3d(0px, " + pos + "px, 0px)";
+        }
+      });
+    </script>
+  </body>

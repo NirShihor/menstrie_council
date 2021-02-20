@@ -19,6 +19,10 @@ app.get("/", function (req, res) {
   res.render("index");
 });
 
+app.get("/heritage", function (req, res) {
+  res.render("heritage");
+});
+
 app.listen(port, function () {
   console.log("Server started successfully on port", port);
 });

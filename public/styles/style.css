@@ -59,8 +59,8 @@ li:hover {
 }
 
 .text {
-  background-color: #fff;
   position: relative;
+  background-color: #fff;
   text-align: center;
   margin: 0rem 1rem 4rem 1rem;
   font-size: 0.9rem;
@@ -191,12 +191,12 @@ p {
 }
 
 .text1 {
-  /* animation: nav-link-load 300ms ease-in; */
+  /* animation: nav-link-load 300ms ease-in;
   animation-duration: var(--nav-link-load-time);
   animation-timing-function: ease-in;
   animation-delay: 2000ms;
   animation-fill-mode: forwards;
-  transform: scale(0);
+  transform: scale(0); */
 }
 
 .text2 {

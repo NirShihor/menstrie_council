@@ -23,6 +23,10 @@ app.get('/oldAndNew', function (req, res) {
   res.render('oldAndNew');
 });
 
+app.get('/events', function (req, res) {
+  res.render('events');
+});
+
 app.listen(port, function () {
   console.log('Server started successfully on port', port);
 });

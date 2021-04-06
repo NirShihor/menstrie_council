@@ -433,3 +433,63 @@ h5 {
     font-size: 1rem;
   }
 }
+
+.bottom-img img {
+  max-width: 90%;
+}
+
+.icons {
+  display: flex;
+  float: left;
+  max-width: 50%;
+  text-align: left;
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  min-width: 15vw;
+}
+
+.grid-wrapper {
+  text-align: center;
+}
+
+.fa-calendar {
+  float: left;
+  padding-right: 0.7rem !important;
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  padding-bottom: 0 !important;
+  font-size: 2rem;
+}
+
+.fa-facebook-square {
+  float: left;
+  padding-left: 0.7rem !important;
+  padding-top: 0.1rem !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  font-size: 2rem;
+}
+
+.events {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 700px) {
+  .events {
+    font-size: 2rem;
+  }
+}
+

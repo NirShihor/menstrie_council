@@ -1,11 +1,12 @@
 body,
 html {
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
   line-height: 1.4;
+  justify-content: center;
   --nav-load-time: 300ms;
   --nav-link-load-time: 500ms;
   --image-load-delay: calc(var(--nav-load-time) + var(--nav-link-load-time));
@@ -101,7 +102,7 @@ li:hover {
 
 .sub-heading h5 {
   padding-top: 0.5rem;
-  padding-left: 0.3rem;
+  padding-left: 2rem;
   text-align: left;
   font-size: 1.2rem;
   margin-block-start: 0em;
@@ -111,9 +112,9 @@ li:hover {
 
 p {
   text-align: left;
-  padding: 0rem 0.3rem 0.3rem 0.3rem;
+  padding: 0rem 2rem 0.3rem 2rem;
   margin-top: 0.1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -146,13 +147,8 @@ p {
     margin-bottom: 4rem;
   }
 
-  .text p {
+  .text {
     padding: 1rem;
-    margin-top: -0.3rem !important;
-  }
-
-  .text h5 {
-    padding: 1rem 1rem 0rem 1rem;
   }
 
   ul {
@@ -389,4 +385,51 @@ h5 {
   font-size: 1.2rem;
   text-align: left;
   padding: 1rem;
+}
+
+/* facebook icon */
+.fa {
+  padding: 15px;
+  font-size: 40px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 13%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* facebook icon color */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.indentText {
+  padding-left: 5rem;
+  margin-top: -0.5rem;
+}
+
+.paraImg {
+  float: left;
+  padding-right: 0.5rem;
+}
+
+.headerAndText {
+  padding-top: 1rem;
+}
+
+@media screen and (max-width: 520px) {
+  h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h5 {
+    font-size: 1rem;
+  }
 }

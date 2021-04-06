@@ -1,0 +1,86 @@
+<body>
+  <%- include ("../partials/header.ejs") %>
+
+  <div class="top-heading scroll">
+    <h5>Old and New</h5>
+  </div>
+
+  <div class="text scroll" data-rate="-1">
+    <div class="headingAndText">
+      <div class="sub-heading">
+        <h5>Active</h5>
+        <p>
+          <img
+            class="paraImg"
+            src="/images/colourSky.jpg"
+            alt="colourful sky"
+          />
+          Menstrie is a hub of activity for cyclists and walkers alike - We are
+          on the SUS Trans national network and have miles of walking and
+          cycling routes into the Ochil Hills with parking at the Dumyat Centre. <br>
+          Menstrie Cycle Network <a href="https://www.sustrans.org.uk/find-a-route-on-the-national-cycle-network/national-cycle-network-routes-in-the-inner-forth-area">click here</a>
+        </p>
+      </div>
+    <div class="headingAndText">
+      <div class="sub-heading">
+        <h5>Old Photos</h5>
+        <p>
+          <img
+            class="paraImg"
+            src="/images/menstrieOld.jpg"
+            alt="colourful sky"
+          />
+          Often our residents post old or memorable photographic events within Menstrie to our Facebook pages for the residents to enjoy. <br>
+          We have collected these picture into albums within Flickr for you to enjoy, also we maybe producing a Menstrie booklet to show case them.
+          <!-- Need to display photos here -->
+        </p>
+      </div>
+    </div>
+    <div class="headingAndText">
+      <div class="sub-heading">
+        <h5>History</h5>
+        <p>
+          <img
+            class="paraImg"
+            src="/images/menstrieCastle2.jpg"
+            alt="colourful sky"
+          />
+          Menstrie Castle has a small museum that is open to the public on request, the community council are key holders. <br>
+          Menstrie Castle Wikipedia Page - <a href="https://en.wikipedia.org/wiki/Menstrie_Castle">click here</a>
+        </p>
+      </div>
+    </div><br>
+    <div class="headingAndText">
+      <div class="sub-heading">
+        <h5>Geography</h5>
+        <p>
+          <img
+            class="paraImg"
+            src="/images/menstriePark.jpg"
+            alt="colourful sky"
+          />
+          Menstrie Wikipedia Page - <a href="https://en.wikipedia.org/wiki/Menstrie">click here</a> <br>
+          Menstrie's Geography - <a href="#">click here</a><br>
+                    Ochils Wikipedia Page - <a href="https://en.wikipedia.org/wiki/Ochil_Hills">click here</a>
+
+        </p>
+      </div>
+    </div>
+    <div class="other-text scroll"></div>
+    <br />
+
+
+  <script>
+    //   Add event listner
+    window.addEventListener('scroll', function (e) {
+      const target = document.querySelectorAll('.scroll');
+      var index = 0,
+        length = target.length;
+      for (index; index < length; index++) {
+        var pos = window.pageYOffset * target[index].dataset.rate;
+
+        target[index].style.transform = 'translate3d(0px, ' + pos + 'px, 0px)';
+      }
+    });
+  </script>
+</body>
